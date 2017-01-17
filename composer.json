@@ -1,0 +1,21 @@
+{
+    "name": "peixinchen/message",
+    "description": "The message encoder/decoder for message queue, it would be encrypted/decrypted between the transmission.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "peixinchen",
+            "email": "peixinchen@foxmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Peixinchen\\Message\\": "src/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
