@@ -50,7 +50,7 @@ class MessageCoder
 
         $this->validate($message);
 
-        return new Message($message['version'], $message['payload']);
+        return [$message['version'], $message['payload']];
     }
 
     protected function encrypt($plaintext)

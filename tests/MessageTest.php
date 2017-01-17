@@ -37,9 +37,9 @@ class MessageTest extends PHPUnit_Framework_TestCase
      */
     public function testDecode($messageText)
     {
-        $message = $this->coder->decode($messageText);
+        list($version, $payload) = $this->coder->decode($messageText);
 
-        $this->assertEquals($this->version, $message->version());
-        $this->assertEquals($this->payload, $message->payload());
+        $this->assertEquals($this->version, $version);
+        $this->assertEquals($this->payload, $payload);
     }
 }

@@ -45,15 +45,14 @@ $messageText = $coder->encode($version, $payload);
 
 3. 解码
 ```php
-// 返回一个强约束的\Peixinchen\Message对象实例
-$message = $coder->decode($messageText);
+list($version, $payload) = $message = $coder->decode($messageText);
 
 // 1.0.0
-var_dump($message->version());
+var_dump($version);
 
 // [
 //   'id' => 1,
 //   'text' => 'Some important message!',
 // ]
-var_dump($message->payload());
+var_dump($payload);
 ```
