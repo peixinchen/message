@@ -45,7 +45,7 @@ $messageText = $coder->encode($version, $payload);
 
 3. 解码
 ```php
-list($version, $payload) = $message = $coder->decode($messageText);
+list($version, $payload) = $coder->decode($messageText);
 
 // 1.0.0
 var_dump($version);
