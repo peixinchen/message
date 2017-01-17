@@ -7,7 +7,7 @@
 1. 使用 composer
 
 ```shell
-# composer require peixinchen/message
+$ composer require peixinchen/message
 ```
 
 ## Tutorial 使用指导
